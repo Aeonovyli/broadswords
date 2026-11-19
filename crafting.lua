@@ -11,7 +11,7 @@ core.register_craft({
     type = "shapeless",
     output = "broadswords:broadsword_stone",
     recipe = {
-        "mcl_core:cobblestone",
+        "mcl_core:cobble",
         "mcl_tools:sword_stone"
     }
 })
