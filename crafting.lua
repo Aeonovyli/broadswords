@@ -18,7 +18,7 @@ core.register_craft({
 
 core.register_craft({
     type = "shapeless",
-    output = "broadswords:broadsword_steel",
+    output = "broadswords:broadsword_iron",
     recipe = {
         "mcl_core:iron_ingot",
         "mcl_tools:sword_iron"
