@@ -101,3 +101,5 @@ minetest.register_tool("broadswords:broadsword_diamond", {
 	_mcl_upgradable = true,
 	_mcl_upgrade_item = "mcl_tools:sword_netherite"
 })
+
+dofile(minetest.get_modpath("broadswords") .. "/crafting.lua")
