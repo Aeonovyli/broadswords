@@ -1,4 +1,4 @@
-minetest.register_tool("broadswords:broadsword_wood", {
+core.register_tool("broadswords:broadsword_wood", {
 	description = ("Wooden Broadsword"),
 	_doc_items_longdesc = sword_longdesc,
 	_doc_items_hidden = false,
@@ -19,7 +19,7 @@ minetest.register_tool("broadswords:broadsword_wood", {
 		swordy_cobweb = { speed = 3, level = 1.3, uses = 90 }
 	},
 })
-minetest.register_tool("broadswords:broadsword_stone", {
+core.register_tool("broadswords:broadsword_stone", {
 	description = ("Stone Broadsword"),
 	_doc_items_longdesc = sword_longdesc,
 	inventory_image = "broadsword_stone.png",
@@ -39,10 +39,10 @@ minetest.register_tool("broadswords:broadsword_stone", {
 		swordy_cobweb = { speed = 6, level = 4.5, uses = 189 }
 	},
 })
-minetest.register_tool("broadswords:broadsword_steel", {
-	description = ("Steel Broadsword"),
+core.register_tool("broadswords:broadsword_iron", {
+	description = ("iron Broadsword"),
 	_doc_items_longdesc = sword_longdesc,
-	inventory_image = "broadsword_steel.png",
+	inventory_image = "broadsword_iron.png",
 	wield_scale = { x = 2, y = 2, z = 1 },
 	groups = { weapon=1, sword=1, dig_speed_class=8, enchantability=14 },
 	tool_capabilities = {
@@ -59,7 +59,7 @@ minetest.register_tool("broadswords:broadsword_steel", {
 		swordy_cobweb = { speed = 9, level = 6, uses = 376.5 }
 	},
 })
-minetest.register_tool("broadswords:broadsword_gold", {
+core.register_tool("broadswords:broadsword_gold", {
 	description = ("Golden Broadsword"),
 	_doc_items_longdesc = sword_longdesc,
 	inventory_image = "broadsword_gold.png",
@@ -79,7 +79,7 @@ minetest.register_tool("broadswords:broadsword_gold", {
 		swordy_cobweb = { speed = 18, level = 3, uses = 49.5 }
 	},
 })
-minetest.register_tool("broadswords:broadsword_diamond", {
+core.register_tool("broadswords:broadsword_diamond", {
 	description = ("Diamond Broadsword"),
 	_doc_items_longdesc = sword_longdesc,
 	inventory_image = "broadsword_diamond.png",
@@ -102,4 +102,4 @@ minetest.register_tool("broadswords:broadsword_diamond", {
 	_mcl_upgrade_item = "mcl_tools:sword_netherite"
 })
 
-dofile(minetest.get_modpath("broadswords") .. "/crafting.lua")
+dofile(core.get_modpath("broadswords") .. "/crafting.lua")
