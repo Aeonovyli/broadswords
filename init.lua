@@ -3,7 +3,6 @@ core.register_tool("broadswords:broadsword_wood", {
 	_doc_items_longdesc = sword_longdesc,
 	_doc_items_hidden = false,
 	inventory_image = "broadsword_wood.png",
-	wield_scale = { x = 2, y = 2, z = 1 },
 	groups = { weapon=1, sword=1, dig_speed_class=2, enchantability=15 },
 	tool_capabilities = {
 		full_punch_interval = 1.25,
@@ -23,7 +22,6 @@ core.register_tool("broadswords:broadsword_stone", {
 	description = ("Stone Broadsword"),
 	_doc_items_longdesc = sword_longdesc,
 	inventory_image = "broadsword_stone.png",
-	wield_scale = { x = 2, y = 2, z = 1 },
 	groups = { weapon=1, sword=1, dig_speed_class=6, enchantability=10 },
 	tool_capabilities = {
 		full_punch_interval = 1.25,
@@ -43,7 +41,6 @@ core.register_tool("broadswords:broadsword_iron", {
 	description = ("iron Broadsword"),
 	_doc_items_longdesc = sword_longdesc,
 	inventory_image = "broadsword_iron.png",
-	wield_scale = { x = 2, y = 2, z = 1 },
 	groups = { weapon=1, sword=1, dig_speed_class=8, enchantability=14 },
 	tool_capabilities = {
 		full_punch_interval = 0.625,
@@ -63,7 +60,6 @@ core.register_tool("broadswords:broadsword_gold", {
 	description = ("Golden Broadsword"),
 	_doc_items_longdesc = sword_longdesc,
 	inventory_image = "broadsword_gold.png",
-	wield_scale = { x = 2, y = 2, z = 1 },
 	groups = { weapon=1, sword=1, dig_speed_class=6, enchantability=22 },
 	tool_capabilities = {
 		full_punch_interval = 0.625,
@@ -83,7 +79,6 @@ core.register_tool("broadswords:broadsword_diamond", {
 	description = ("Diamond Broadsword"),
 	_doc_items_longdesc = sword_longdesc,
 	inventory_image = "broadsword_diamond.png",
-	wield_scale = { x = 2, y = 2, z = 1 },
 	groups = { weapon=1, sword=1, dig_speed_class=10, enchantability=20 },
 	tool_capabilities = {
 		full_punch_interval = 0.625,
@@ -103,3 +98,6 @@ core.register_tool("broadswords:broadsword_diamond", {
 })
 
 dofile(core.get_modpath("broadswords") .. "/crafting.lua")
+dofile(core.get_modpath("broadswords") .. "/compatibility.lua")
+
+core.register_alias("broadswords:broadsword_steel", "broadswords:broadsword_iron")
