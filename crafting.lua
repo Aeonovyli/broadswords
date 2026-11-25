@@ -18,6 +18,15 @@ core.register_craft({
 
 core.register_craft({
     type = "shapeless",
+    output = "broadswords:broadsword_deepslate",
+    recipe = {
+        "mcl_deepslate:deepslate_cobbled",
+        "vl_deepslate_tools:sword_deepslate"
+    }
+})
+
+core.register_craft({
+    type = "shapeless",
     output = "broadswords:broadsword_iron",
     recipe = {
         "mcl_core:iron_ingot",
@@ -47,7 +56,7 @@ core.register_craft({
     type = "shapeless",
     output = "broadswords:broadsword_netherite",
     recipe = {
---        "mcl_core:diamond", todo
+        "mcl_nether:netherite_ingot",
         "mcl_tools:sword_netherite"
     }
 })
