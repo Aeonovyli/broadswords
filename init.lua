@@ -5,7 +5,7 @@ core.register_tool("broadswords:broadsword_wood", {
 	inventory_image = "broadsword_wood.png",
 	groups = { weapon=1, sword=1, dig_speed_class=2, enchantability=15 },
 	tool_capabilities = {
-		full_punch_interval = 1.25,
+		full_punch_interval = 1,
 		max_drop_level=1,
 		damage_groups = {fleshy=6},
 		punch_attack_uses = 90,
@@ -24,7 +24,7 @@ core.register_tool("broadswords:broadsword_stone", {
 	inventory_image = "broadsword_stone.png",
 	groups = { weapon=1, sword=1, dig_speed_class=6, enchantability=10 },
 	tool_capabilities = {
-		full_punch_interval = 1.25,
+		full_punch_interval = 1,
 		max_drop_level=4.5,
 		damage_groups = {fleshy=6},
 		punch_attack_uses = 189,
@@ -36,6 +36,27 @@ core.register_tool("broadswords:broadsword_stone", {
 		swordy = { speed = 6, level = 4.5, uses = 189 },
 		swordy_cobweb = { speed = 6, level = 4.5, uses = 189 }
 	},
+})
+core.register_tool("broadswords:broadsword_deepslate", {
+	description = ("Deepslate Broadsword"),
+	_doc_items_longdesc = sword_longdesc,
+	inventory_image = "broadsword_deepslate.png",
+	wield_scale = wield_scale,
+	groups = { weapon = 1, sword = 1, dig_speed_class = 3, enchantability = 5 },
+	tool_capabilities = {
+		full_punch_interval = 1,
+		max_drop_level = 4.5,
+		damage_groups = { fleshy = 7.5 },
+		punch_attack_uses = 198,
+	},
+	sound = { breaks = "default_tool_breaks" },
+	_repair_material = "mcl_deepslate:deepslate_cobbled",
+	_mcl_toollike_wield = true,
+	_mcl_diggroups = {
+		swordy = { speed = 4.25, level = 6.375, uses = 225 },
+		swordy_cobweb = { speed = 4.25, level = 6.375, uses = 225 },
+	},
+	vl_max_ench_lvl = 3,
 })
 core.register_tool("broadswords:broadsword_iron", {
 	description = ("iron Broadsword"),
@@ -103,7 +124,7 @@ core.register_tool("broadswords:broadsword_netherite", {
 	wield_scale = wield_scale,
 	groups = { weapon=1, sword=1, dig_speed_class=5, enchantability=10, fire_immune=1 },
 	tool_capabilities = {
-		full_punch_interval = 1.25,
+		full_punch_interval = 1,
 		max_drop_level=7.5,
 		damage_groups = {fleshy=13.5},
 		punch_attack_uses = 3046.5,
