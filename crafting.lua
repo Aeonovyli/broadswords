@@ -42,3 +42,12 @@ core.register_craft({
         "mcl_tools:sword_diamond"
     }
 })
+
+core.register_craft({
+    type = "shapeless",
+    output = "broadswords:broadsword_netherite",
+    recipe = {
+--        "mcl_core:diamond", todo
+        "mcl_tools:sword_netherite"
+    }
+})
