@@ -1,6 +1,7 @@
 core.register_tool("broadswords:broadsword_wood", {
 	description = ("Wooden Broadsword"),
 	_doc_items_longdesc = sword_longdesc,
+	wield_scale = {x = 2.0, y = 2.0, z = 1.0},
 	_doc_items_hidden = false,
 	inventory_image = "broadsword_wood.png",
 	groups = { weapon=1, sword=1, dig_speed_class=2, enchantability=15 },
@@ -21,6 +22,7 @@ core.register_tool("broadswords:broadsword_wood", {
 core.register_tool("broadswords:broadsword_stone", {
 	description = ("Stone Broadsword"),
 	_doc_items_longdesc = sword_longdesc,
+	wield_scale = {x = 2.0, y = 2.0, z = 1.0},
 	inventory_image = "broadsword_stone.png",
 	groups = { weapon=1, sword=1, dig_speed_class=6, enchantability=10 },
 	tool_capabilities = {
@@ -40,8 +42,8 @@ core.register_tool("broadswords:broadsword_stone", {
 core.register_tool("broadswords:broadsword_deepslate", {
 	description = ("Deepslate Broadsword"),
 	_doc_items_longdesc = sword_longdesc,
+	wield_scale = {x = 2.0, y = 2.0, z = 1.0},
 	inventory_image = "broadsword_deepslate.png",
-	wield_scale = wield_scale,
 	groups = { weapon = 1, sword = 1, dig_speed_class = 3, enchantability = 5 },
 	tool_capabilities = {
 		full_punch_interval = 1,
@@ -61,6 +63,7 @@ core.register_tool("broadswords:broadsword_deepslate", {
 core.register_tool("broadswords:broadsword_iron", {
 	description = ("iron Broadsword"),
 	_doc_items_longdesc = sword_longdesc,
+	wield_scale = {x = 2.0, y = 2.0, z = 1.0},
 	inventory_image = "broadsword_iron.png",
 	groups = { weapon=1, sword=1, dig_speed_class=8, enchantability=14 },
 	tool_capabilities = {
@@ -80,6 +83,7 @@ core.register_tool("broadswords:broadsword_iron", {
 core.register_tool("broadswords:broadsword_gold", {
 	description = ("Golden Broadsword"),
 	_doc_items_longdesc = sword_longdesc,
+	wield_scale = {x = 2.0, y = 2.0, z = 1.0},
 	inventory_image = "broadsword_gold.png",
 	groups = { weapon=1, sword=1, dig_speed_class=6, enchantability=22 },
 	tool_capabilities = {
@@ -99,6 +103,7 @@ core.register_tool("broadswords:broadsword_gold", {
 core.register_tool("broadswords:broadsword_diamond", {
 	description = ("Diamond Broadsword"),
 	_doc_items_longdesc = sword_longdesc,
+	wield_scale = {x = 2.0, y = 2.0, z = 1.0},
 	inventory_image = "broadsword_diamond.png",
 	groups = { weapon=1, sword=1, dig_speed_class=10, enchantability=20 },
 	tool_capabilities = {
@@ -118,10 +123,10 @@ core.register_tool("broadswords:broadsword_diamond", {
 	_mcl_upgrade_item = "mcl_tools:sword_netherite"
 })
 core.register_tool("broadswords:broadsword_netherite", {
-	description = S("Netherite Broadsword"),
+	description = ("Netherite Broadsword"),
 	_doc_items_longdesc = sword_longdesc,
+	wield_scale = {x = 2.0, y = 2.0, z = 1.0},
 	inventory_image = "broadsword_netherite.png",
-	wield_scale = wield_scale,
 	groups = { weapon=1, sword=1, dig_speed_class=5, enchantability=10, fire_immune=1 },
 	tool_capabilities = {
 		full_punch_interval = 1,
