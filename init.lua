@@ -96,6 +96,27 @@ core.register_tool("broadswords:broadsword_diamond", {
 	_mcl_upgradable = true,
 	_mcl_upgrade_item = "mcl_tools:sword_netherite"
 })
+core.register_tool("broadswords:broadsword_netherite", {
+	description = S("Netherite Broadsword"),
+	_doc_items_longdesc = sword_longdesc,
+	inventory_image = "broadsword_netherite.png",
+	wield_scale = wield_scale,
+	groups = { weapon=1, sword=1, dig_speed_class=5, enchantability=10, fire_immune=1 },
+	tool_capabilities = {
+		full_punch_interval = 1.25,
+		max_drop_level=7.5,
+		damage_groups = {fleshy=13.5},
+		punch_attack_uses = 3046.5,
+	},
+	sound = { breaks = "default_tool_breaks" },
+	_repair_material = "mcl_nether:netherite_ingot",
+	_mcl_toollike_wield = true,
+	_mcl_diggroups = {
+		swordy = { speed = 12, level = 7.5, uses = 3046.5 },
+		swordy_cobweb = { speed = 12, level = 7.5, uses = 3046.5 }
+	},
+})
+
 
 dofile(core.get_modpath("broadswords") .. "/crafting.lua")
 dofile(core.get_modpath("broadswords") .. "/compatibility.lua")
