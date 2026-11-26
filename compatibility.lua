@@ -20,7 +20,7 @@ if core.get_modpath("mcl_lapis_stuff") then
             swordy_cobweb = { speed = 12, level = 7.5, uses = 3046.5 }
         },
         _mcl_upgradable = true,
-        _mcl_upgrade_item = "mcl_tools:sword_netherite"
+        _mcl_upgrade_item = "broadswords:broadsword_netherite"
     })
     core.register_craft({
         type = "shapeless",
@@ -84,7 +84,7 @@ if core.get_modpath("mcl_ruby_stuff") then
             swordy_cobweb = { speed = 12, level = 7.5, uses = 2694 }
         },
         _mcl_upgradable = true,
-        _mcl_upgrade_item = "mcl_tools:sword_netherite"
+        _mcl_upgrade_item = "broadswords:broadsword_netherite"
     })
     core.register_craft({
         type = "shapeless",
@@ -117,7 +117,7 @@ if core.get_modpath("mcl_emerald_stuff") then
             swordy_cobweb = { speed = 12, level = 7.5, uses = 2694 }
         },
         _mcl_upgradable = true,
-        _mcl_upgrade_item = "mcl_tools:sword_netherite"
+        _mcl_upgrade_item = "broadswords:broadsword_netherite"
     })
     core.register_craft({
         type = "shapeless",
