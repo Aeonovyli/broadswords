@@ -120,7 +120,7 @@ core.register_tool("broadswords:broadsword_diamond", {
 		swordy_cobweb = { speed = 12, level = 7.5, uses = 2343 }
 	},
 	_mcl_upgradable = true,
-	_mcl_upgrade_item = "mcl_tools:sword_netherite"
+	_mcl_upgrade_item = "broadswords:broadsword_netherite"
 })
 core.register_tool("broadswords:broadsword_netherite", {
 	description = ("Netherite Broadsword"),
